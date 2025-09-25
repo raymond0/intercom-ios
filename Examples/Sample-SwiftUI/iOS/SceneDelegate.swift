@@ -20,12 +20,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         // Setup Intercom
-        Intercom.setApiKey(INTERCOM_API_KEY, forAppId: INTERCOM_APP_ID)
-        Intercom.setLauncherVisible(true)
+//        Intercom.setApiKey(INTERCOM_API_KEY, forAppId: INTERCOM_APP_ID)
+//        Intercom.setLauncherVisible(true)
         
-        #if DEBUG
-        Intercom.enableLogging()
-        #endif
+//        #if DEBUG
+//        Intercom.enableLogging()
+//        #endif
         
         let defaults = UserDefaults.standard
         if let email = defaults.string(forKey: emailKey) {

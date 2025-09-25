@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		197ACDC526737B940024C38C /* Intercom.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 197ACDC426737B940024C38C /* Intercom.xcframework */; };
+		197ACDC626737B940024C38D /* Intercom.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 197ACDC426737B940024C38C /* Intercom.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4C26B6062506838F00124338 /* Sample_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26B5F32506838E00124338 /* Sample_SwiftUIApp.swift */; };
 		4C26B6082506838F00124338 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26B5F42506838E00124338 /* ContentView.swift */; };
 		4C26B60A2506838F00124338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C26B5F52506838F00124338 /* Assets.xcassets */; };
 		4C26B61A250688C500124338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26B619250688C500124338 /* AppDelegate.swift */; };
 		4C26B61C25068A2F00124338 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26B61B25068A2F00124338 /* SceneDelegate.swift */; };
+		4C26B61D25068A3000124338 /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26B61D25068A2F00124338 /* CarPlaySceneDelegate.swift */; };
 		4C26B6202507E1C400124338 /* StylizedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26B61F2507E1C400124338 /* StylizedTextField.swift */; };
 		4C26B6222507E27100124338 /* StylizedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26B6212507E27100124338 /* StylizedButton.swift */; };
 		4C26B6242507E3AF00124338 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26B6232507E3AF00124338 /* ViewModifiers.swift */; };
@@ -27,6 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				197ACDC626737B940024C38D /* Intercom.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,11 +45,13 @@
 		4C26B5FD2506838F00124338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../iOS/Other/Info.plist; sourceTree = "<group>"; };
 		4C26B619250688C500124338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C26B61B25068A2F00124338 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4C26B61D25068A2F00124338 /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
 		4C26B61F2507E1C400124338 /* StylizedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylizedTextField.swift; sourceTree = "<group>"; };
 		4C26B6212507E27100124338 /* StylizedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylizedButton.swift; sourceTree = "<group>"; };
 		4C26B6232507E3AF00124338 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		4C26B6262507F92500124338 /* LoggedInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInView.swift; sourceTree = "<group>"; };
 		4C26B6282507F99400124338 /* LoggedOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutView.swift; sourceTree = "<group>"; };
+		713AD5A82E843F38003F0750 /* Sample-SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sample-SwiftUI.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,7 @@
 		4C26B5ED2506838E00124338 = {
 			isa = PBXGroup;
 			children = (
+				713AD5A82E843F38003F0750 /* Sample-SwiftUI.entitlements */,
 				197ACDC426737B940024C38C /* Intercom.xcframework */,
 				4C26B5FC2506838F00124338 /* iOS */,
 				4C26B5FB2506838F00124338 /* Products */,
@@ -84,6 +90,7 @@
 				4C26B5F32506838E00124338 /* Sample_SwiftUIApp.swift */,
 				4C26B619250688C500124338 /* AppDelegate.swift */,
 				4C26B61B25068A2F00124338 /* SceneDelegate.swift */,
+				4C26B61D25068A2F00124338 /* CarPlaySceneDelegate.swift */,
 				4C26B62A2507FAFF00124338 /* Views */,
 				4C26B62C2508054300124338 /* Other */,
 			);
@@ -208,6 +215,7 @@
 				4C26B6082506838F00124338 /* ContentView.swift in Sources */,
 				4C26B6062506838F00124338 /* Sample_SwiftUIApp.swift in Sources */,
 				4C26B61C25068A2F00124338 /* SceneDelegate.swift in Sources */,
+				4C26B61D25068A3000124338 /* CarPlaySceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,10 +340,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sample-SwiftUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
-				EXCLUDED_ARCHS = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../../",
@@ -346,7 +354,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.intercom.Sample-SwiftUI";
 				PRODUCT_NAME = "Sample-SwiftUI";
 				SDKROOT = iphoneos;
@@ -360,10 +368,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sample-SwiftUI.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
-				EXCLUDED_ARCHS = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../../",
